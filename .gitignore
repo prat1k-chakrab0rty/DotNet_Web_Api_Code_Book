@@ -86,3 +86,4 @@ Migrations/*.csproj.user
 # JetBrains Rider
 .idea/
 /.vs/DotNet_Web_Api_Code_Book/v17/.suo
+/.vs/DotNet_Web_Api_Code_Book/v17/DocumentLayout.json

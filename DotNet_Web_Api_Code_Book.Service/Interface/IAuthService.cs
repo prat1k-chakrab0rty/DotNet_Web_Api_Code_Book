@@ -7,5 +7,6 @@ namespace DotNet_Web_Api_Code_Book.Service.Interface
     {
         public Task<Response> SignUp(User user);
         public Task<Response> SignIn(string username, string password);
+        public Task<Response> ChangePassword(string username, string oldPassword, string newPassword);
     }
 }

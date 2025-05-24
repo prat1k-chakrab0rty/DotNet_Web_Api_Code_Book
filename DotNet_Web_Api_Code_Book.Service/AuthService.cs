@@ -20,6 +20,7 @@ namespace DotNet_Web_Api_Code_Book.Service
             _authRepo = authRepo;
             _jWTTokenService = jWTTokenService;
         }
+
         public async Task<Response> SignIn(string username, string password)
         {
             User user = await _authRepo.ValidateCredentials(username, password);
@@ -38,6 +39,11 @@ namespace DotNet_Web_Api_Code_Book.Service
         public async Task<Response> SignUp(User user)
         {
             return await _authRepo.SignUp(user);
+        }
+
+        public async Task<Response> ChangePassword(string username, string oldPassword, string newPassword)
+        {
+            return await _authRepo.ChangePassword(username, oldPassword, newPassword);
         }
     }
 }

@@ -12,5 +12,6 @@ namespace DotNet_Web_Api_Code_Book.Repo.Interface
     {
         public Task<Response> SignUp(User user);
         public Task<User> ValidateCredentials(string username, string password);
+        public Task<Response> ChangePassword(string userName,string oldPassword, string newPassword);
     }
 }
